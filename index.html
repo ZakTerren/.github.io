@@ -15,74 +15,83 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
+                <div class="header__burger">
+                    <span class="header__burger-line-1"></span>
+                    <span class="header__burger-line-2"></span>
+                    <span class="header__burger-line-3"></span>
+                </div>
                 <nav class="menu">
                     <ul class="menu__list">
-                        <li class="link--focus menu__list-item">
-                            <a href="#" class="menu__list-item-home">Home</a>
+                        <li class=" link--focus menu__list-item">
+                            <a href="#" class="menu__list-item-home" id="menu__list-item-home">Home</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-item-about">About me</a>
+                            <a href="#about" class="menu__list-item-about" id="menu__list-item-about">About me</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-item-skills">Skills</a>
+                            <a href="#skills" class="menu__list-item-skills" id="menu__list-item-skills">Skills</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-item-portfolio">Portfolio</a>
+                            <a href="#portfolio" class="menu__list-item-portfolio"
+                                id="menu__list-item-portfolio">Portfolio</a>
                         </li>
                         <li class="menu__list-item">
-                            <a href="#" class="menu__list-item-contact">Contacts</a>
-                        </li>
-                        <li class="menu__burger ">
-                            <a class="menu__list-item-burger" href="#">
-                                <img class="burger" src="img/burger.svg" alt="burger">
-                            </a>
+                            <a href="#contacts" class="menu__list-item-contact"
+                                id="menu__list-item-contact">Contacts</a>
                         </li>
                     </ul>
                 </nav>
-                <div class="header__info">
-                    <h1 class="header__info-name">
+
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="container">
+            <div class="home__inner">
+                <div class="home__info">
+                    <h1 class="home__info-name" id="header__info-name">
                         Denis <br />
                         Novik
                     </h1>
-                    <p class="header__info-desc">UX | UI designer <br />
+                    <p class="home__info-desc" id="header__info-desc">UX | UI designer <br />
                         24 years old, Minsk</p>
-                    <div class="header__info-lang">
-                        <div class="info-lang__ukr">
-                            <a href="#" class="info-lang__ukrainian">UKR</a>
+                    <div class="home__info-lang">
+                        <div class="info-lang">
+                            <a class="info-lang__ukrainian" href="#" onclick="lang_ukr()">UKR</a>
                         </div>
                         <span class="info-lang__separator">|</span>
-                        <div class="link--focus info-lang__eng">
-                            <a href="#" class="info-lang__english">ENG</a>
+                        <div class="link--focus info-lang">
+                            <a class="info-lang__english" href="#" onclick="lang_eng()">ENG</a>
                         </div>
                     </div>
                 </div>
-                <div class="header__photo">
+                <div class="home__photo">
                     <img class="photo" src="img/photo.jpg" alt="photo">
                     <img class="photo-2" src="img/photo-2.jpg" alt="photo-2">
                 </div>
             </div>
         </div>
-    </header>
-    <section class="about">
+    </section>
+    <section class="about" id="about">
         <div class="container">
             <div class="about__inner">
-                <h2 class="about__tittle">About me</h2>
+                <h2 class="about__tittle" id="about__tittle">About me</h2>
                 <div class="about__info-block">
-                    <p class="about__info">Hi, I'm Denis - UX/UI designer from Minsk. <br />
+                    <p class="about__info" id="about__info-1">Hi, I'm Denis - UX/UI designer from Minsk. <br />
                         I'm interested in design and everything connected with it.</p>
-                    <p class="about__info">I'm studying at courses "Web and mobile design
+                    <p class="about__info" id="about__info-2">I'm studying at courses "Web and mobile design
                         interfaces" in IT-Academy.</p>
-                    <p class="about__info">Ready to implement excellent projects <br />
+                    <p class="about__info" id="about__info-3">Ready to implement excellent projects <br />
                         with wonderful people.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="container">
             <div class="skills__inner">
-                <h2 class="skills__title">Skills</h2>
-                <p class="skills__descr">I work in such programs as</p>
+                <h2 class="skills__title" id="skills__title">Skills</h2>
+                <p class="skills__descr" id="skills__descr">I work in such programs as</p>
                 <div class="skills__programm">
                     <div class="skill_programm-card-1">
                         <img class="card__image" src="img/photoshop.png" alt="photoshop">
@@ -215,32 +224,32 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="portfolio__inner">
-                <h2 class="portfolio__title">Portfolio</h2>
+                <h2 class="portfolio__title" id="portfolio__title">Portfolio</h2>
                 <div class="portfolio__site">
                     <img class="portfolio__image-site" src="img/portfolio-image-1.jpg" alt="portfolio-image-1">
-                    <a class="portfolio__link" href="#">Online fashion store - Homepage</a>
+                    <a class="portfolio__link" id="portfolio__link-1" href="#">Online fashion store - Homepage</a>
                 </div>
                 <div class="portfolio__site">
                     <img class="portfolio__image-site" src="img/portfolio-image-2.jpg" alt="portfolio-image-2">
-                    <a class="portfolio__link" href="#">Reebok Store - Concept</a>
+                    <a class="portfolio__link" id="portfolio__link-2" href="#">Reebok Store - Concept</a>
                 </div>
                 <div class="portfolio__site">
                     <img class="portfolio__image-site" src="img/portfolio-image-3.jpg" alt="portfolio-image-3">
-                    <a class="portfolio__link" href="#">Braun Landing Page - Concept</a>
+                    <a class="portfolio__link" id="portfolio__link-3" href="#">Braun Landing Page - Concept</a>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer__inner">
-                <h2 class="footer__title">Contacts</h2>
-                <p class="footer__title-descr">Want to know more or just chat? <br />
+                <h2 class="footer__title" id="footer__title">Contacts</h2>
+                <p class="footer__title-descr" id="footer__title-descr">Want to know more or just chat? <br />
                     You are welcome!</p>
-                <button class="footer__message_btn">Send message</button>
+                <button class="footer__message_btn" id="footer__message_btn">Send message</button>
                 <div class="footer__social">
                     <a href="#" class="social__link">
                         <img class="social__icon" src="img/social-icon-1.svg" alt="social-icon-1">
@@ -255,7 +264,7 @@
                         <img class="social__icon" src="img/social-icon-4.svg" alt="social-icon-4">
                     </a>
                 </div>
-                <p class="footer__social-descr">Like me on <br />
+                <p class="footer__social-descr" id="footer__social-descr">Like me on <br />
                     LinkedIn, Instagram, Behance, Dribble</p>
             </div>
         </div>
